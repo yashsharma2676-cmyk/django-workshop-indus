@@ -19,6 +19,6 @@ def contactprocess(request):
     if request.method == 'POST':
         a = request.POST['txt1']
         b = request.POST['txt2']
-        msg = "your name is " , a , " and your email is " , b
+        msg = "your name is " , a , " and your email is " , b,
         return HttpResponse(msg)
     
