@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    {% include 'menu.html' %}
+    <h1> hello Contact page</h1>
+     <form method="post" action="/contactprocess">
+      {% csrf_token %}
+        NO1: <input type="text" name="txt1" placeholder="enter your name" required autocomplete="off"/>
+        NO2: <input type="text" name="txt2" placeholder = "enter your email" required autocomplete="off"/>
+     <input type = "submit"/>
+    </form>
+</body>
+</html>
