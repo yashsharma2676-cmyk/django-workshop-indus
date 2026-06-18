@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product {
+            padding: 50px;
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 50px;
+            background-color: chocolate;
+        }
+
+        .product:hover {
+            box-shadow: 10px 10px 10px grey;
+        }
+
+        .btn {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: 170px;
+            height: 27px;
+            border: 1px solid black;
+        }
+        
+        .btn:hover {
+            background-color: maroon;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel ="stylesheet" 
+    href="{% static 'style.css' %}"/>
+
+</head>
+<body>
+    <h1> shop </h1>
+
+    
+    <! -- content start -->
+    <div class="main">
+        <!--product start-->
+        <div class="product">
+            <img width="200" height="200" src = "{% static 'untitled.png' %}"/>            
+            <h3>nature</h3>
+            <p>₹666</p> 
+            <button class="btn">Buy Now</button>
+        </div>
+        <!--product end-->
+         <!--product start-->
+        <div class="product">
+            <img width="200" height="200" src = "{% static 'u.png' %}"/>            
+            <h3>free handpaint</h3>
+            <p>₹555</p> 
+            <button class="btn">Buy Now</button>
+        </div>
+        <!--product end-->
+           <!--product start-->
+         <div class="product">
+            <img width="200" height="200" src = "{% static 'monalisa.png' %}"/>            
+            <h3>monalisa</h3>
+            <p>₹55000</p> 
+            <button class="btn">Buy Now</button>
+        </div>
+        <!--product end-->
+            <!--product start-->
+            <div class="product">
+                <img width="200" height="200" src = "{% static 'majnu.png' %}"/>            
+                <h3>majnu bhai</h3>
+                <p>₹7700</p> 
+                <button class="btn">Buy Now</button> 
+            </div>
+            <!--product end-->
+               <!--product start-->
+        <div class="product">
+            <img width="200" height="200" src = "{% static 'starry_night.png' %}"/>            
+            <h3>Starry Night</h3>
+            <p>₹64000</p> 
+            <button class="btn">Buy Now</button>
+        </div>
+        <!--product end-->  
+    </div>
+  </body>
+</html>
